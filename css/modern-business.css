@@ -274,6 +274,287 @@ span.closePopup {
 
 span.closePopup:before {content: '\f00d';font-family: 'FontAwesome';font-size: 20px;}
 
+/* PROJECT SECTION */
+section.project-section{padding: 0px 20px 50px}
+
+.project-section .explore_title {
+  padding-bottom: 20px;
+}
+
+.projects_slider .slick-list{padding-bottom: 20px;}
+
+.project_meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.project_author_img {width: 60px;height: 60px;border-radius: 100%;overflow: hidden;display: flex;}
+
+.project_author_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project_author_meta {width: calc(100% - 60px);padding-left: 10px;}
+
+p.project_title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 5px;
+  line-height: 1;
+}
+
+p.project_desc {
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+}
+
+.project-slide > img {
+  width: 100%;
+  height: 261px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-slide {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.projects_slider .slick-slide {
+  padding: 0 10px;
+}
+
+/* POST SECTION */
+.post_title h3 {
+  font-size: 44px;
+  font-family: 'Frutiger BQ';
+  margin-bottom: 20px;
+}
+
+.post_meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post_author_img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.post_author_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+p.post_author {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+p.post_desc {
+  font-size: 16px;
+  margin: 0;
+  color: #0e684a;
+  font-weight: 700;
+}
+
+p.post_time {
+  font-size: 14px;
+  font-weight: 500;
+  color: #afafaf;
+  margin: 0;
+}
+
+.post_meta_content {
+  padding-left: 10px;
+}
+
+.post_image {
+  width: 100%;
+  height: 252px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.post_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post_tags {
+  display: flex;
+}
+
+.post_tags span {
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 5px;
+  color: #45ba95;
+}
+
+.post_share_list {
+  display: flex;
+}
+
+span.post_share_item {
+  margin-right: 5px;
+  font-size: 12px;
+  color: #45ba95;
+}
+
+span.post_like_icon:before {content: '\f004';font-family: 'FontAwesome';font-size: 18px;}
+span.post_comment_icon:before {content: '\f27a';font-family: 'FontAwesome';font-size: 18px;}
+span.post_view_icon:before {content: '\f06e';font-family: 'FontAwesome';font-size: 18px;}
+span.post_fav_icon:before {content: '\f005';font-family: 'FontAwesome';font-size: 18px;}
+span.post_share_icon:before {content: '\f1e0';font-family: 'FontAwesome';font-size: 18px;}
+
+span.post_sharing_icon {
+  font-size: 0;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+article.post {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+article.post:after {content: '';width: 95%;height: 1px;background: #afafaf;position: absolute;bottom: 0;left: 0;right: 0;margin: auto;}
+article.post:last-child:after{display: none;}
+
+
+.leads_wrapper {
+  padding: 15px 10px;
+  background: #f7f7f7;
+}
+
+.lead_bid_btn a {
+  font-size: 16px;
+  padding: 5px 30px;
+  background: #36be93;
+  border-radius: 40px;
+  border-bottom: 1px solid #0e684a;
+  color: #fff;
+}
+
+.lead_bid_btn {
+  margin-left: 15px;
+}
+
+.lead_bid_message {
+  border: 1px solid #0e684a;
+  padding: 12px;
+}
+
+.lead_bid_message p {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.lead-box {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.lead-box:after {content: '';width: 100%;height: 2px;position: absolute;background: #36be93;bottom: 0px;}
+.last-child{margin: 0}
+.last-child:after{display: none;}
+.lead-show_more{text-align: right;}
+.lead-show_more a, .post-last_child a {
+  margin: 0;
+  color:#000;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+}
+.post-last_child {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+}
+
+/* WAITING SECTION */
+section.waiting-section {
+  width: 100%;
+  padding: 70px 20px;
+  background: #f8f8f8 url('../images/banner-img-2.jpg') no-repeat center / cover;
+}
+
+.waiting_wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.waiting_wrapper h2 {
+  font-size: 70px;
+  font-weight: 700;
+  color: #fff;
+  font-family: 'Frutiger BQ';
+  margin-bottom: 40px;
+}
+
+.waiting_store-btn a {
+  display: inline-block;
+  margin: 0 7px;
+}
+
+/* FOOTER */
+footer.footer {
+  width: 100%;
+  padding: 30px 20px 0;
+}
+
+.footer_menus {
+  display: flex;
+  padding: 30px 0;
+}
+
+.footer_menu {
+  width: 25%;
+}
+
+.footer_menu h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.footer_menu  ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer_menu ul li {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer_menu ul li a {
+  color: #000;
+}
+
+.footer_menu ul li:last-child {
+  margin: 0;
+}
 
 @media screen and (max-width: 1200px)
 {
