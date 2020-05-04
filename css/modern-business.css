@@ -627,6 +627,150 @@ span.language img {
   margin-right: 7px;
 }
 
+/* LOGIN PAGE STYLING */
+
+section.login-section {
+  width: 100%;
+  padding: 50px 20px;
+}section.login-section {}
+
+.login_box {
+  max-width: 667px;
+  margin: auto;
+  width: 100%;
+  padding: 30px 60px;
+  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fbfbfb;
+}
+
+h3.login_title {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Frutiger BQ';
+  margin-bottom: 20px;
+  line-height: 1.1;
+  letter-spacing: 3px;
+}
+
+form.login_form {
+  width: 100%;
+}
+
+form.login_form .form_row {
+  width: 100%;
+  margin-bottom: 12px;
+  position: relative;
+  text-align: center;
+}
+
+form.login_form .form_row:last-child {
+  margin: 20px 0 13px;
+}
+
+form.login_form .form_row input {
+  width: 100%;
+  padding: 10px 20px 10px 50px;
+  font-size: 20px;
+  color: #000;
+  outline: none;
+  border: 1.5px solid #e2e2e2;
+  border-radius: 5px;
+}
+
+.login_icon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 12px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span.user_icon.login_icon:before {content: '\f007';font-family: 'FontAwesome';color: #3abd93;font-size: 24px;}
+span.password_icon.login_icon:before {content: '\f023';font-family: 'FontAwesome';color: #3abd93;font-size: 24px;}
+span.email_icon.login_icon:before {content: '\f0e0';font-family: 'FontAwesome';color: #3abd93;font-size: 24px;}
+
+form.login_form .form_row input[type="submit"] {
+  width: 80%;
+  margin: auto;
+  background: #3abd93;
+  color: #fff;
+  padding: 4px 0;
+  font-size: 25px;
+  border: 0;
+}
+
+div.divider {
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+div.divider:before {content: '';position: absolute;width: 90%;height: 2px;background: #e2e2e2;left: 0;right: 0;top: 0;bottom: 0;margin: auto;}
+
+span.or_divider {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 5px 9px;
+  background: #fbfbfb;
+}
+
+a.facebook_login_btn {
+  width: 80%;
+  display: block;
+  text-align: center;
+  padding: 9px 0px;
+  margin: 7px 0 20px;
+  background: linear-gradient(to bottom, #5676b6, #304179);
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+a.facebook_login_btn:before {
+  content: '\f09a';
+  font-family: 'FontAwesome';
+  margin-right: 15px;
+}
+
+span.divider {
+  width: 90%;
+  display: block;
+  height: 2px;
+  background: #e2e2e2;
+}
+
+span.signup_divider {
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 5px 9px;
+  background: #fbfbfb;
+  margin: 20px 0 15px;
+}
+
+a.signup_btn {
+  padding: 3px 40px;
+  background: #177457;
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+  border-radius: 6px;
+  border: 2px solid #129a6f;
+}
+
+
 @media screen and (max-width: 1200px)
 {
   .logo{height: 40px;}
@@ -683,4 +827,15 @@ span.language img {
   .post_meta{flex-wrap: wrap;justify-content: center;}
   .lead_bid_btn{width: 100%;text-align: center;margin: 10px 0}
   .explore_title h3{font-size: 30px}
+  .login_box{max-width: 100%;padding: 30px}
+  form.login_form .form_row input[type="submit"]{width: 100%}
+  a.facebook_login_btn{width: 100%;font-size: 16px;}
+  form.login_form .form_row input{font-size: 16px;padding: 10px 20px 10px 40px}
+  .login_icon{width: 20px}
+  form.login_form .form_row input[type="submit"], span.password_icon.login_icon:before, span.user_icon.login_icon:before, span.email_icon.login_icon:before{font-size: 20px}
+  span.or_divider, span.signup_divider{font-size: 13px}
+  a.signup_btn{font-size: 18px}
+
+  
+  
 }
