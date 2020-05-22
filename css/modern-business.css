@@ -632,7 +632,11 @@ span.language img {
 section.login-section {
   width: 100%;
   padding: 50px 20px;
+<<<<<<< HEAD
 }
+=======
+}section.login-section {}
+>>>>>>> a62e44444747780e9e6d0b25b503c69565d18619
 
 .login_box {
   max-width: 667px;
