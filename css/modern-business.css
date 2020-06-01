@@ -1114,6 +1114,260 @@ section.course-categories-tab_section {
   display: block;
 }
 
+/* CLASSES SECTION */
+section.classes-section {width: 100%;padding: 20px;}
+
+.classes-section_header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.classes-section_header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.classes-section_list {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.classes-section_list ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    flex-wrap: nowrap;
+}
+
+.classes-section_list ul li {
+    font-size: 14px;
+    margin: 0;
+}
+
+.classes-section_list ul li button {
+    background: none;
+    border: none;
+    position: relative;
+    outline: none;
+}
+.classes-section_list ul li button.mixitup-control-active:before {content: '';position: absolute;width: 70%;height: 2px;background: #36be93;left: 0;right: 0;margin: auto;bottom: -7px;}
+
+.classes-section_class-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.classes-section_class {
+    width: calc(100% / 3 - 20px);
+    margin: 0 10px 30px;
+    margin-bottom: 30px;
+}
+
+.classes-section_class-image {
+    width: 100%;
+    height: 245px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.classes-section_class-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.classes-section_class-meta {
+    width: 100%;
+}
+
+.classes-section_class-meta h4 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    line-height: 1.3;
+}
+
+.classes-section_class-meta p {
+    font-size: 18px;
+}
+
+.classes-section_show-more-btn {
+  text-align: center;
+  margin-top: -10px;
+}
+
+.classes-section_show-more-btn .classes_show_more_btn {border: 2px solid #3cbc93;font-size: 20px;text-transform: uppercase;padding: 8px 12px;outline: none;transition: 0.5s ease all;}
+.classes-section_show-more-btn .classes_show_more_btn:hover{background: #3cbc93;color: #fff}
+
+/* TWITTER SECTION */
+section.twitter-section {
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.twitter-section_heading h4 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.twitter-section_heading p {
+  font-size: 18px;
+}
+
+.twitter-section_heading {
+  padding-top: 20px;
+}
+
+.twitter-section_short-decs-box {
+  background: #0b1d26;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.twitter-section_short-decs-box_meta {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  position: relative;
+}
+
+.twitter-section_short-decs-box_meta img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 12px;
+}
+
+.twitter-section_short-decs-box_autor h5 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.twitter-section_short-decs-box_autor p {
+  font-size: 12px;
+  margin: 1px 0 0;
+  font-style: italic;
+}
+
+span.twitter-icon {
+  font-size: 0;
+}
+
+span.twitter-icon:before {content: '\f099';font-family: 'FontAwesome';font-size: 20px;color: #03a9f4;right: 5px;position: absolute;top: 5px;}
+
+.twitter-section_short-decs-box_desc {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.twitter-section_short-decs-box_desc p {
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.twitter-section_detail-decs-box {width: 100%;padding: 15px;background: #0b1d26;}
+
+.twitter-section_detail-decs-box_meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.twitter-section_detail-decs-box_meta img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 12px;
+}
+
+.twitter-section_detail-decs-box_autor h5 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.twitter-section_detail-decs-box_desc img {
+    margin-bottom: 20px;
+}
+
+.twitter-section_detail-decs-box_desc p {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* FAQ SECTION */
+section.faq-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.faq-section_heading {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.faq-section_heading h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+div#faq-section_accordion {
+  width: 80%;
+  margin: auto;
+}
+
+.faq-section-accordion_heading {
+  background: #000;
+  padding: 10px 20px;
+  color: #fff;
+  position: relative;
+  font-size: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0 15px;
+  outline: none;
+}
+
+.faq-section-accordion_heading.ui-accordion-header-active {
+  margin: 0;
+  background: #36be93;
+}
+
+.faq-section-accordion_content {
+  padding: 20px;
+}
+
+.faq-section-accordion_content p {
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.faq-section-accordion_content p:last-child {
+  margin: 0;
+}
+
+.faq-section-accordion_heading:before {content: '\f107';font-family: 'FontAwesome';position: absolute;right: 20px;top: 8px;font-size: 26px;}
+
+
 @media screen and (max-width: 1200px)
 {
   .logo{height: 40px;}

@@ -124,4 +124,16 @@ $(document).ready(function(){
         })
     });
 
+    if($('body').find('.classes-section_class-wrapper').length > 0)
+    {
+        var mixer = mixitup('.classes-section_class-wrapper');
+    }
+
+    if($('body').find('#faq-section_accordion').length > 0){
+        $("#faq-section_accordion").accordion({
+            heightStyle: "content",
+            collapsible: true,
+        });
+    }
+
 });
