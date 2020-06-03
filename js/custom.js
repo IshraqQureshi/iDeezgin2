@@ -136,4 +136,38 @@ $(document).ready(function(){
         });
     }
 
+    if($('body').find('.teacher_intro_scrollbar').length > 0){
+        $(".teacher_intro_scrollbar").mCustomScrollbar();
+    }
+
+    if($('body').find('.teacher-explore-classes_tab-content').length > 0){
+        $(".teacher-explore-classes_tab-content").slick({
+            'slidesToShow': 5,
+            'slidesToScroll': 1,            
+        });
+
+        // var mixer = mixitup('.teacher-explore-classes_tab-content');
+
+        // $('.teacher-explore-classes_tab-menu ul li button').click(function(){            
+        //     setTimeout(() => {
+        //         $('.teacher-explore-classes_tab-content .slick-slide').each(function(){
+        //             var displayValue = $(this).find('.teacher-explore-classes_tab').css('display');
+        //             var opacityValue = $(this).find('.teacher-explore-classes_tab').css('opacity');
+        //             var currentSlide = $(this);                    
+        //             if(displayValue == 'none' || opacityValue == 0)
+        //             {
+        //                 $(currentSlide).css('display', 'none')
+        //             }
+        //             else{
+        //                 $(currentSlide).css('display', 'block')
+        //             }
+        //         });
+        //     }, 800);
+        // });
+    }
+
+
+
+
+
 });
