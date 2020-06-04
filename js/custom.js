@@ -140,12 +140,68 @@ $(document).ready(function(){
         $(".teacher_intro_scrollbar").mCustomScrollbar();
     }
 
+    $('.teacher_intro_vidoes_meta_wrapper ul li').click(function(){
+        $('.teacher_intro_vidoes_meta_wrapper ul li').removeClass('active_tab');
+        $(this).addClass('active_tab');
+        $('.teacher_intro_video').addClass('teacher-intro_play_icon');    
+        $('.teacher_intro_video').addClass('teacher_hide_video');        
+        let tab_menu = $(this).data('tab-name');
+        $('.teacher_intro_video').each(function(){            
+            let tab_name = $(this).data('tab-name');
+            if( tab_name == tab_menu )
+            {
+                $(this).removeClass('teacher_hide_video');                
+            }
+        });
+    });  
+
+    $('.teacher_intro_video').click(function(){
+        $(this).removeClass('teacher-intro_play_icon');
+        $(this).children('img').css('display', 'none');
+        $(this).children('video').css('display', 'block');
+        $(this).children('iframe').css('display', 'block');
+        $(this).children('video').trigger('play');
+    });
+
     if($('body').find('.teacher-explore-classes_tab-content').length > 0){
         $(".teacher-explore-classes_tab-content").slick({
             'slidesToShow': 5,
-            'slidesToScroll': 1,            
-        });
+            'slidesToScroll': 1, 
+            'infinite': true,
+            'autoplay': true,
+            // 'variableWidth': true,
+            responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 4,                                    
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 779,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 667,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
 
+        });
+        
         // var mixer = mixitup('.teacher-explore-classes_tab-content');
 
         // $('.teacher-explore-classes_tab-menu ul li button').click(function(){            
