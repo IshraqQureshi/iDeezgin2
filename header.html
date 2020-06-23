@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    
+    <header class="custom_header">
+        <div class="custom_wrapper">
+            <div class="custom_header-logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav class="custom_header-nav">
+                <div class="custom_header-nav-btn"></div>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Hall of Frame</a>
+                    </li>
+                    <li>
+                        <a href="#">Fare of Month</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign In</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="custom_header-user">
+                <div class="custom_header-user-img">
+                    <img src="images/avatar.png" alt="User">
+                </div>
+                <div class="custom_header-user-meta">
+                    <p>Welcome, <span>Administrator</span></p>
+                </div>
+            </div>
+            <div class="custom_header-sec_nav">
+                <div class="custom_header-sec_nav-btn"></div>
+                <nav class="custom_header-sec_nav-wrapper">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Hame of Fame</a>
+                        </li>
+                        <li>
+                            <a href="#">Fare of Month</a>
+                        </li>
+                        <li>
+                            <a href="#">Shop</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.custom_header-sec_nav-btn').click(function(){
+                $(this).toggleClass('custom-close-btn');
+                $('.custom_header-sec_nav-wrapper').slideToggle();
+            });
+
+            $('.custom_header-nav-btn').click(function(){
+                $(this).toggleClass('custom-close-btn');
+                $(this).siblings('ul').slideToggle();
+            });
+            
+        });
+    </script>
+</body>
+</html>
